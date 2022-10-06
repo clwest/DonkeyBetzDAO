@@ -135,7 +135,7 @@ contract DonkeyDNS is ERC721URIStorage {
     }
 
  
-   receive() external payable {}
+
 
 
     function withdraw() public onlyOwner {
@@ -150,5 +150,9 @@ contract DonkeyDNS is ERC721URIStorage {
         return address(this).balance;
 
     }
+
+       receive() external payable {}
+
+        fallback() external payable {}
 
 }
