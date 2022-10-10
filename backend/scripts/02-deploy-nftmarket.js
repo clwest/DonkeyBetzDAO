@@ -1,7 +1,7 @@
 const { ethers } = require("hardhat");
 
 async function main() {
-    const metadataURL = "ipfs://"
+    const metadataURL = "ipfs://QmT7TetpfcDK5RT2j1NUT3vf1RTGgcqo15YD1FnDyoHcVT"
   // Load NFT contract
   const DonkeyNFTFactory = await ethers.getContractFactory("DonkeyNFTs");
 
