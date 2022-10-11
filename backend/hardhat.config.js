@@ -32,5 +32,12 @@ module.exports = {
       url: process.env.ALCHEMY_API,
       accounts: [process.env.PRIVATE_KEY],
     }
+
+    // goerli: {
+    //   url: 'https://goerli.ethereum.coinbasecloud.net',
+    //   user: process.env.COINBASE_USER,
+    //   password: process.env.COINBASE_PASSWORD,
+    //   accounts: [process.env.PRIVATE_KEY],
+    // }
   }
 };
