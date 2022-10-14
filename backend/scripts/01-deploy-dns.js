@@ -11,11 +11,11 @@ async function main() {
   await txn.wait();
   console.log("Minted domain Doggo.betz")
 
-  txn = await donkeyDNSContract.setRecord("Doggo", "Why ape when you can Donk!")
+  txn = await donkeyDNSContract.setRecord("DonkeyKing", "Why ape when you can Donk!")
   await txn.wait();
-  console.log("Set the record for Steve")
+  console.log("Set the record for DonkeyKing")
 
- const address = await donkeyDNSContract.getAddress("Doggo");
+ const address = await donkeyDNSContract.getAddress("DonkeyKing");
  console.log("Owner of domain DonkeyKing:", address)
 
  const balance = await ethers.provider.getBalance(donkeyDNSContract.address);
